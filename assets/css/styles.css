@@ -60,3 +60,27 @@ li:hover {
     background-color: rgb(118, 118, 253);
     color: white;
 }
+
+.socialIcons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 3.2vw;
+    /* background-color: grey; */
+    width: 10%;
+    height: 10%;
+
+    position: absolute;
+    top: 10%;
+    right: 75%;
+}
+
+i {
+   box-shadow: 0px 0px 5px white;
+   transition-duration: 0.4s;
+}
+
+i:hover {
+    transform: scale(1.1);
+}
