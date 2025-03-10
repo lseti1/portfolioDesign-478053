@@ -96,7 +96,7 @@ i:hover {
 
     position: absolute;
     top: 10%;
-    left: 76%;
+    left: 78%;
 }
 
 img {
@@ -123,8 +123,9 @@ img {
 
 .content {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
 
     /* background-color: grey; */
@@ -166,4 +167,26 @@ li:hover a {
     /* This allows <li> tags with <a> tags inside them to be adjusted properly */
     color: white;
     text-decoration: none;
+}
+
+button {
+    border: 1px solid grey;
+    background-color: white;
+    transition-duration: 0.5s;
+    padding: 3%;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1vw;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px grey;
+}
+
+button:hover {
+    background-color: rgb(118, 118, 253);
+    color: white;
+}
+
+p[class="disclaimers"] {
+    font-size: 0.8vw;
+    color: grey;
 }
