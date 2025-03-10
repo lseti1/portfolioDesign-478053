@@ -136,3 +136,17 @@ img {
     top: 45%;
     left: 15%;
 }
+
+.graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+
+    height: 50%;
+    width: auto;
+
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
