@@ -113,10 +113,26 @@ img {
 
     /* background-color: grey; */
     width: 20vw;
-    height: 3vw;
+    height: 7vh;
     font-size: 1.5vw;
 
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 25%;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+
+    /* background-color: grey; */
+
+    width: 40vw;
+    height: 20vh;
+    font-size: 1.1vw;
+
+    position: absolute;
+    top: 45%;
+    left: 15%;
 }
