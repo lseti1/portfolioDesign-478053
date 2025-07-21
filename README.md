@@ -14,7 +14,7 @@ Note: This is not a completely functional website (in relation to links), as it 
 ## Features
 - Multi-section portfolio 
 - A user-friendly layout that is easy to navigate
-- Different raphics and animations for visual flair
+- Different graphics and animations for visual flair
 - Simple design to highlight work 
 
 ## Author
