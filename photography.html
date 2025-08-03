@@ -5,50 +5,42 @@
     <meta name="viewport" content="width=device=width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Digital Portfolio Photography</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Portfolio - Photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="socialIcons">
-        <a href="https://www.facebook.com" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-    </div>
-    <header>
-        <nav>   
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li class="activePage">Photography</li>
-                <li><a href="videoEditing.html">Video Editing</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="logo"">
-        <img src="assets/images/Logo.webp">
-    </div>
-    <div class="title">
-        <h1>Photo Showcase</h1>
-    </div>
-    <div class="content">
-        <div class="imageContainer">
-            <img class="imageDisplay" src="assets/images/Cityscapes.jpg">
-            <img class="imageDisplay" src="assets/images/RealEstate.jpg">
-            <img class="imageDisplay" src="assets/images/Product.jpg">
+<body class="relative h-screen bg-black text-white font-light">
+    <div id="headerNavBar"></div>
+    <div class="h-[60%] px-20 mt-20 grid grid-cols-[60%_40%]">
+        <div class="flex flex-col gap-4 py-10 mr-20">
+            <h1 class="text-5xl font-semibold border-b-4 border-yellow-600">Photography</h1>
+            <p class="text-2xl">Here are some highlights from my Photography Catalogue!</p>
+            <div class="flex flex-row justify-center items-center px-5 py-2 gap-4">
+                <img class="w-[33.3333%] rounded border border-gray-700 shadow hover:shadow-[0_0_10px_#ffffff] cursor-pointer duration-500" src="assets/images/Cityscapes.jpg">
+                <img class="w-[33.3333%] rounded border border-gray-700 shadow hover:shadow-[0_0_10px_#ffffff] cursor-pointer duration-500" src="assets/images/Product.jpg">
+                <img class="w-[33.3333%] rounded border border-gray-700 shadow hover:shadow-[0_0_10px_#ffffff] cursor-pointer duration-500" src="assets/images/RealEstate.jpg">
+            </div>
+            <div class="flex justify justify-center items-center gap-10">
+                <button class="rounded p-5 bg-gray-900 border border-yellow-600 text-xl hover:bg-black duration-500 min-w-48">View More</button>
+            </div>
         </div>
-        <p>Please feel free to explore my collections above!</p>
-        <p class="disclaimers">Note: Links won't work. For Visual Purposes Only.</p>
+        <div class="flex bg-gray-800 items-center justify-center rounded border border-yellow-600">
+            <img src="assets/images/Photography1.png">
+        </div>
     </div>
-    <div class="graphic">
-        <img src="assets/images/PhotographerImage.png">
-    </div>
-    <div class="bottomNote">
-        <p>Please Note: This Portfolio is best viewed in Full Screen Mode</p>
-    </div>
+    <div id="footerDisclaimer"></div>
 </body>
+
+<script>
+    fetch('/partials/headerNavBar.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('headerNavBar').innerHTML = html;
+        });
+    fetch('/partials/footerDisclaimer.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('footerDisclaimer').innerHTML = html;
+        });
+</script>
 </html>
